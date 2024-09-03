@@ -1,0 +1,21 @@
+.footer {
+    background-color: $primary;
+
+    &__logo {
+        display: inline-flex;
+
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+
+    &__intro {
+        margin-top: 24px;
+        font-size: 14px;
+    }
+
+    * {
+        color: $white !important;
+    }
+}

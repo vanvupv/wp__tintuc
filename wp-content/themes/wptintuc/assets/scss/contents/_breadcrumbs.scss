@@ -1,0 +1,43 @@
+// -------------- Breadcrumbs ------------------
+.breadcrumbs {
+    position: relative;
+    margin-bottom: 24px;
+
+    a,
+    .current {
+        color: $success;
+        font-size: 14px;
+        font-weight: 400;
+
+        &.current {
+            color: $primary;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        @include media-breakpoint-up(lg) {
+            &:hover {
+                // color: $secondary;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .icon {
+        padding: 0px 8px;
+        margin: 0px 8px;
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 2px;
+            left: 0%;
+
+            path {
+                stroke: $success;
+            }
+        }
+    }
+}

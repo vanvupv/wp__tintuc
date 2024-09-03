@@ -1,0 +1,17 @@
+.homePage {
+    &__top {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include media-breakpoint-up(lg) {
+            padding-right: 48px;
+            padding-left: 48px;
+        }
+    }
+
+    &__catsLink {
+        a {
+            color: $primary;
+        }
+    }
+}
